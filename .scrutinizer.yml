@@ -1,6 +1,6 @@
 filter:
     paths:
-        - '*'
+        - 'app/*'
     excluded_paths:
         - 'bootstrap/*'
         - 'config/*'
