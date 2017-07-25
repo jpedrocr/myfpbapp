@@ -1,0 +1,13 @@
+language: php
+
+php:
+  - 7.1
+
+before_script:
+  - composer install --prefer-source --no-interaction
+  - cp .env.travis .env
+  - php artisan key:generate
+
+script:
+  - vendor/bin/phpunit
+  - vendor/bin/phpcs app --standard=PSR2

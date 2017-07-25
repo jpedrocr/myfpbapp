@@ -4,7 +4,7 @@
 root = true
 
 [*]
-indent_size = 2
+indent_size = 4
 end_of_line = lf
 indent_style = space
 insert_final_newline = true
@@ -12,7 +12,7 @@ trim_trailing_whitespace = false
 
 [*.{js,css,sass,scss,json,vue,html}]
 indent_style = space
-indent_size = 2
+indent_size = 4
 
 [*.php]
 indent_size = 4
