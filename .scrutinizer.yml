@@ -5,6 +5,7 @@ filter:
         - 'app/Console/Kernel.php'
         - 'app/Exceptions/Handler.php'
         - 'app/Providers/RouteServiceProvider.php'
+        . 'app\PageTemplates.php'
 checks:
     php:
         align_assignments: true

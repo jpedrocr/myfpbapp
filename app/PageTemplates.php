@@ -22,10 +22,10 @@ trait PageTemplates
 
     private function services()
     {
-        $this->crud->addField([// CustomHTML
+        $this->crud->addField([   // CustomHTML
                         'name' => 'metas_separator',
                         'type' => 'custom_html',
-                        'value' => '<br><h2>' . trans('backpack::pagemanager.metas') . '</h2><hr>',
+                        'value' => '<br><h2>'.trans('backpack::pagemanager.metas').'</h2><hr>',
                     ]);
         $this->crud->addField([
                         'name' => 'meta_title',
@@ -46,10 +46,10 @@ trait PageTemplates
                         'fake' => true,
                         'store_in' => 'extras',
                     ]);
-        $this->crud->addField([// CustomHTML
+        $this->crud->addField([   // CustomHTML
                         'name' => 'content_separator',
                         'type' => 'custom_html',
-                        'value' => '<br><h2>' . trans('backpack::pagemanager.content') . '</h2><hr>',
+                        'value' => '<br><h2>'.trans('backpack::pagemanager.content').'</h2><hr>',
                     ]);
         $this->crud->addField([
                         'name' => 'content',
