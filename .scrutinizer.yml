@@ -2,11 +2,9 @@ filter:
     paths:
         - 'app/*'
     excluded_paths:
-        - 'bootstrap/*'
-        - 'config/*'
-        - 'public/*'
-        - 'storage/*'
-        - 'tests/*'
+        - 'app/Console/Kernel.php'
+        - 'app/Exceptions/Handler.php'
+        - 'app/Providers/RouteServiceProvider.php'
 checks:
     php:
         align_assignments: true
