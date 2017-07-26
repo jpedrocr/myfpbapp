@@ -59,7 +59,7 @@ trait PageTemplates
                     ]);
     }
 
-    private function about_us()
+    private function aboutUs()
     {
         $this->crud->addField([
                         'name' => 'content',

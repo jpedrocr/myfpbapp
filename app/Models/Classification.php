@@ -16,7 +16,10 @@ class Classification extends Model
     protected $primaryKey = 'id';
     public $timestamps = true;
     protected $guarded = ['id'];
-    protected $fillable = ['phase_id', 'source_id', 'position', 'team_id', 'games', 'victories', 'defeats', 'missing', 'scored', 'suffered', 'diference', 'points'];
+    protected $fillable = [
+        'phase_id', 'source_id', 'position', 'team_id', 'games', 'victories', 'defeats', 'missing', 'scored',
+        'suffered', 'diference', 'points'
+    ];
     protected $hidden = ['created_at', 'updated_at'];
     protected $dates = ['created_at', 'updated_at'];
     protected $appends = [];

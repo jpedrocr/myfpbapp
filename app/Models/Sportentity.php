@@ -16,7 +16,11 @@ class Sportentity extends Model
     protected $primaryKey = 'id';
     public $timestamps = true;
     protected $guarded = ['id'];
-    protected $fillable = ['sportentity_id', 'sport_name', 'sourcecategory_id', 'source_id', 'sportentitiable_id', 'sportentitiable_type', 'name', 'alternative_name', 'image', 'president', 'technicaldirector', 'cadpresident', 'address', 'phone', 'fax', 'email', 'url'];
+    protected $fillable = [
+        'sportentity_id', 'sport_name', 'sourcecategory_id', 'source_id', 'sportentitiable_id', 'sportentitiable_type',
+        'name', 'alternative_name', 'image', 'president', 'technicaldirector', 'cadpresident', 'address', 'phone',
+        'fax', 'email', 'url'
+    ];
     protected $hidden = ['created_at', 'updated_at'];
     protected $dates = ['created_at', 'updated_at'];
     protected $appends = [];
@@ -48,7 +52,8 @@ class Sportentity extends Model
     }
     public function sportentitiable()
     {
-        return $this->morphTo();}
+        return $this->morphTo();
+    }
 
     /*
     |--------------------------------------------------------------------------

@@ -16,7 +16,9 @@ class Venue extends Model
     protected $primaryKey = 'id';
     public $timestamps = true;
     protected $guarded = ['id'];
-    protected $fillable = ['sourcecategory_id', 'source_id', 'name', 'alternative_name', 'address', 'phone', 'fax', 'email', 'owner'];
+    protected $fillable = [
+        'sourcecategory_id', 'source_id', 'name', 'alternative_name', 'address', 'phone', 'fax', 'email', 'owner'
+    ];
     protected $hidden = ['created_at', 'updated_at'];
     protected $dates = ['created_at', 'updated_at'];
     protected $appends = [];

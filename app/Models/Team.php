@@ -16,7 +16,10 @@ class Team extends Model
     protected $primaryKey = 'id';
     public $timestamps = true;
     protected $guarded = ['id'];
-    protected $fillable = ['club_id', 'sourcecategory_id', 'source_id', 'name', 'alternative_name', 'image', 'season_id', 'agegroup_id', 'competitionlevel_id', 'venue_id'];
+    protected $fillable = [
+        'club_id', 'sourcecategory_id', 'source_id', 'name', 'alternative_name', 'image', 'season_id', 'agegroup_id',
+        'competitionlevel_id', 'venue_id'
+    ];
     protected $hidden = ['created_at', 'updated_at'];
     protected $dates = ['created_at', 'updated_at'];
     protected $appends = [];

@@ -16,7 +16,10 @@ class Game extends Model
     protected $primaryKey = 'id';
     public $timestamps = true;
     protected $guarded = ['id'];
-    protected $fillable = ['round_id', 'sourcecategory_id', 'source_id', 'team_id', 'team_id', 'number', 'schedule', 'home_result', 'out_result', 'venue_id', 'status'];
+    protected $fillable = [
+        'round_id', 'sourcecategory_id', 'source_id', 'team_id', 'team_id', 'number', 'schedule', 'home_result',
+        'out_result', 'venue_id', 'status'
+    ];
     protected $hidden = ['created_at', 'updated_at'];
     protected $dates = ['schedule', 'created_at', 'updated_at'];
     protected $appends = [];

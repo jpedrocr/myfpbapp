@@ -16,7 +16,10 @@ class Club extends Model
     protected $primaryKey = 'id';
     public $timestamps = true;
     protected $guarded = ['id'];
-    protected $fillable = ['sourcecategory_id', 'source_id', 'name', 'alternative_name', 'image', 'founding_date', 'president', 'address', 'venue_id', 'phone', 'fax', 'email', 'url'];
+    protected $fillable = [
+        'sourcecategory_id', 'source_id', 'name', 'alternative_name', 'image', 'founding_date', 'president', 'address',
+        'venue_id', 'phone', 'fax', 'email', 'url'
+    ];
     protected $hidden = ['created_at', 'updated_at'];
     protected $dates = ['founding_date', 'created_at', 'updated_at'];
     protected $appends = [];
