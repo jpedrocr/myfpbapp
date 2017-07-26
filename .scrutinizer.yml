@@ -96,7 +96,6 @@ coding_style:
             around_operators:
                 assignment: true
                 logical: true
-                equality: true
                 relational: true
                 bitwise: true
                 additive: true

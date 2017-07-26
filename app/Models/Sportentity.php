@@ -34,7 +34,7 @@ class Sportentity extends Model
     {
         return $this->belongsTo('App\Models\Sourcecategory');
     }
-    public function sportentity()
+    public function parentsportentity()
     {
         return $this->belongsTo('App\Models\Sportentity');
     }
